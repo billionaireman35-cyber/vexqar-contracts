@@ -1,0 +1,12 @@
+# Foundry generated files
+out/
+cache/
+
+# Local backup files
+*.backup
+*.bak
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
