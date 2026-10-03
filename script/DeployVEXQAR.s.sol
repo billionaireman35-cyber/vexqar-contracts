@@ -97,7 +97,10 @@ contract DeployVEXQAR is Script {
 
         require(token.balanceOf(address(contributorsVesting)) == CONTRIBUTORS, "VEXQAR: contributors balance mismatch");
 
-        require(token.balanceOf(deployer) == 0, "VEXQAR: deployer retains VXR");
+        require(
+            deployer == DEPLOYMENT_WALLET,
+            "VEXQAR: deployer must be deployment wallet"
+        );
 
         require(token.totalSupply() == TOTAL_SUPPLY, "VEXQAR: total supply changed");
 
