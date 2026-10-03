@@ -10,3 +10,6 @@ cache/
 .env
 .env.*
 !.env.example
+
+# Foundry broadcast artifacts
+broadcast/
